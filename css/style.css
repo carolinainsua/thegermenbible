@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sono:wght@200..800&display=swap');
+
+*{margin:0
+padding:0}
+
+/*!--------HEADER--------*/
+header{
+    background-color: rgb(255, 255, 255);
+    
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.logo {
+    pheight: 10vh;
+    justify-self: center;
+}
+
+.logo img {
+    height: 7vh;
+    width: auto;
+}
+
+.nav {
+        justify-self: start;
+    }
+
+.buscador {
+    justify-self: end;
+}
+
+header div nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    list-style: none;
+    padding:0;
+    margin: 0;
+    
+}
+
+header div nav ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 1vw;
+    font-family: poppins;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 13px;
+    }
+/*!--------FIN HEADER--------*/
+
+
+/**--------MAIN--------*/
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.galeria-clasicos{
+    margin: 5px;
+    display: grid;
+    justify-content: space-around;
+    align-items:center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30vh;
+    margin-bottom: 10%;
+    }
+
+.galeria-clasicos-item img{
+    width: 20vw;
+   }
+
+.upcycling h2{
+        color: rgb(141, 141, 141);
+        font-family: sono;
+        font-size: 50px;
+}
+
+.upcycling h2{
+    height: 7vh;
+    background-color: rgb(63, 63, 63);
+    
+}
+
+.upcycling img{
+   width:20%
+}
+
+.upcycling video{
+    width: 50vi;
+    align-items:left;
+    margin: left 0;
+}
+
+
+
+/*?--------FOOTER--------*/
+footer{
+    background-color: green;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+
+footer img{
+  margin: 10px;
+  padding-top: 40px ;
+  height: 7vh;
+ }
