@@ -60,19 +60,18 @@ header div nav ul li a {
     }
 
 .galeria-clasicos{
-    margin: 5px;
     display: flex;
+    align-items:center;
     justify-content: space-evenly;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 25vh;
     }
 
 .galeria-clasicos-item img{
-    width: 20vw;
+    height: 25vw;
     transition: 1s;
   }
 .galeria-clasicos-item :hover{
-    width: 24vw;
+    height: 33vw;
     transition: 1s;}
 
 .upcycling h2{
