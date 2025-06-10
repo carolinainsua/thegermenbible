@@ -57,21 +57,23 @@ header div nav ul li a {
 .hero img {
     width: 100%;
     display: block;
-}
+    }
 
 .galeria-clasicos{
     margin: 5px;
-    display: grid;
-    justify-content: space-around;
-    align-items:center;
+    display: flex;
+    justify-content: space-evenly;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 30vh;
-    margin-bottom: 10%;
+    grid-template-rows: 25vh;
     }
 
 .galeria-clasicos-item img{
     width: 20vw;
-   }
+    transition: 1s;
+  }
+.galeria-clasicos-item :hover{
+    width: 24vw;
+    transition: 1s;}
 
 .upcycling h2{
         color: rgb(141, 141, 141);
