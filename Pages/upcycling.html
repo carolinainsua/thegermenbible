@@ -1,31 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Germen Bible</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    </head>
+</head>
+
 <body>
-    <header><!-- Menú Desplegable / LOGO / Buscador -->
-<label for="menu">Menú</label> <!--Menú Desplegable-->
-<select name="meni" id="menu" onchange="window.location.href=this.value">
-  <option value="../Pages/novedades.html">Novedades</option>
-  <option value="../Pages/clasicos.html">Clásicos</option>
-  <option value="../Pages/upcycling.html">"Upcycling"</option>   
-  <option value="../Pages/nosotros.html">Nosotros</option>   
-  <option value="../Pages/Testimonios.html">Testimonios</option>   
-</select>
-        <a href="../index.html"><img src="../Img/logo-germen.png" alt="logo-germen" width="8%"></a> <!--LOGO-->
-        <form class="search-bar" action="/buscar" method="GET"> <!--BUSCADOR-->
-            <input type="text" name="q" placeholder="Buscar...">
-            <button type="submit">🔍</button>
-          </form>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid position-relative">
+                <!--Logo-->
+                <a class="navbar-brand mx-auto position-absolute top-50 start-50 translate-middle" href="../index.html">
+                    <img class="logo" src="../img/logo-germen.png" alt="logo-germen">
+                </a>
+                <!--Navegador-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                            <a class="nav-link" href="../pages/novedades.html">Novedades</a>
+                            <a class="nav-link" href="../pages/upcycling.html">"Upcycling"</a>
+                            <a class="nav-link" href="../pages/testimonios.html">Testimonios</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+                <!--Botón Hamburguesa-->
+                <button class="navbar-toggler position-absolute end-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
     </header>
- </body>
-<footer>
-    <a href="https://thegermenshop.mitiendanube.com/" target="_blank"><img src="../Img/carrito.png" alt="comprar"></a>
-    <a href="https://www.instagram.com/thegermenmask" target="_blank"><img src="../Img/instagram.png" alt="instagram"></a>
-    <a href="https://wa.me/5491141562509" target="_blank"><img src="../Img/whatsapp.png" alt="whatsapp"></a>
+    <section class="body-upcycling">
+        <div class="upcyclingpage-grid">
+            <div class="upcyclingpage-grid-item upcycling-grid-item-2column"><h1>¿Qué es el Upcycling?</h1></div>
+                        <div class="upcyclingpage-grid-item upcyclingpage-grid-item-2row"><video autoplay loop
+                    src="../videos/inflatabletrash.mp4"></video></div>
+            <div class="upcyclingpage-grid-item"><img src="../img/upcycling-logo.png" alt="Logo Upcycling"></div>
+            <div class="upcyclingpage-grid-item">En nuestra marca de carteras puffer transformamos materiales en desuso
+                en piezas únicas y valiosas. A través del upcycling, reutilizamos prendas que ya no se usan para darles
+                una segunda vida en forma de carteras originales, suaves y con identidad propia. Este proceso no solo
+                evita el desperdicio, sino que además eleva el valor del material original mediante el diseño y la
+                confección artesanal. Cada cartera puffer es irrepetible y cuenta una historia distinta. Creemos en el
+                poder de crear sin producir de más, y en que lo que ya existe puede convertirse en algo mejor.</div>
+            <div class="upcyclingpage-grid-item"></div>
+        </div>
+
+    </section>
+    <footer>
+        <a href="https://thegermenshop.mitiendanube.com/" target="_blank"><img src="../Img/carrito.png"
+                alt="comprar"></a>
+        <a href="https://www.instagram.com/thegermenmask" target="_blank"><img src="../Img/instagram.png"
+                alt="instagram"></a>
+        <a href="https://wa.me/5491141562509" target="_blank"><img src="../Img/whatsapp.png" alt="whatsapp"></a>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+</body>
+
 </html>

@@ -1,86 +1,180 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sono:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sono:wght@200..800&display=swap");
 
-*{margin:0;
-padding:0;}
+* {
+  margin: 0;
+  padding: 0;
+}
 
-/*!--------HEADER--------*/
+/*!------------------------------------------------HEADER------------------------------------------------*/
 header {
-    height: 9vh;
-    display: grid;
-    padding-left: 30px;
-    padding-right:20px ;
+  height: 8vh;
+  display: grid;
+  padding-left: 30px;
+  padding-right: 20px;
 }
 
 .navbar-brand img {
-    height: 7vh;
+  height: 7vh;
 }
 
 .nav-item {
-    padding-right: 50px;
+  padding-right: 50px;
 }
 
 @media (min-width: 992px) {
-.nav-item {
-    display: flex;}
-}
-/*!--------FIN HEADER--------*/
-
-/**--------MAIN--------*/
-.hero img {
-    width: 100%;
-    display: block;
-    }
-
-.galeria-clasicos{
+  .nav-item {
     display: flex;
-    align-items:center;
-    justify-content: space-evenly;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-.galeria-clasicos-item img{
-    height: 25vw;
-    transition: 1s;
   }
-.galeria-clasicos-item :hover{
-    height: 33vw;
-    transition: 1s;}
-
-.upcycling h2{
-        color: rgb(141, 141, 141);
-        font-family: sono;
-        font-size: 50px;
 }
 
-.upcycling h2{
-    height: 7vh;
-    background-color: rgb(63, 63, 63);
-    
+/**------------------------------------------------MAIN INDEX------------------------------------------------*/
+.hero img {
+  width: 100%;
+  display: block;
 }
 
-.upcycling img{
-   width:20%
+.galeria-clasicos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 5px;
 }
 
-.upcycling video{
-    width: 50vi;
-    align-items:left;
-    margin: left 0;
+.galeria-clasicos-item img {
+  height: 25vw;
+  transition: 1s;
+}
+
+.galeria-clasicos-item :hover {
+  height: 33vw;
+  transition: 1s;
+}
+
+.upcycling {
+  padding: 3%;
+}
+
+.upcycling-title {
+  width: 40%;
+  transform: rotate(-3deg);
+}
+
+.upcycling-container {
+  display: grid;
+  grid-template-columns: 4fr 2fr 5fr;
+  grid-template-rows: 35vh 35vh;
+}
+
+.upcycling-item {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.upcycling-item p {
+  padding: 5%;
+  text-align: center;
+}
+
+.upcycling-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.upcycling-item-2row {
+  grid-row: span 2;
+}
+
+.upcycling-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/**------------------------------------------------BODY NOSOTROS------------------------------------------------*/
+body .body-nosotros {
+  background-color: #5ab55a;
+  min-height: 100vh;
+}
+
+/**------------------------------------------------BODY UPCYCLING------------------------------------------------*/
+body .body-upcycling {
+  background: linear-gradient(to bottom, #eaeae8, #5ab55a);
+}
+
+.upcyclingpage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50vh 50vh;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.upcyclingpage-grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ box-sizing: border-box;
+ padding: 4vw;
+}
+
+.upcycling-grid-item-2column {
+  grid-column: 1 / 3;
+  grid-row: 1/2;
+}
+
+.upcyclingpage-grid-item h1 {
+  font-family: "poppins";
+  font-weight: 800;
+  font-size: 10vw;
+  color: #0d0d0d;
+padding-top: 10vh;
+  }
+
+.upcyclingpage-grid-item {
+    font-family: 'poppins';
+    font-size: ,7vw;
 }
 
 
+.upcyclingpage-grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
 
-/*?--------FOOTER--------*/
-footer{
-    background-color: green;
-    height: 20vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    }
+.upcyclingpage-grid-item-2row {
+  grid-row: span 2;
+  padding: 1vw;
+  display:flexbox;
+  justify-content: center;
+  align-content: center;
+}
 
-footer img{
-  margin: 10px;
-  padding-top: 40px ;
-  height: 7vh;
- }
+.upcyclingpage-grid-item-2row video {
+  width: 25vw;
+  object-fit: cover;
+  display: block;
+}
+
+/*?------------------------------------------------FOOTER------------------------------------------------*/
+footer {
+  background-color: #5ab55a;
+  height: 15vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer img {
+  height: 5vh;
+}

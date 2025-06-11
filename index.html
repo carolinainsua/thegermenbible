@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -22,10 +23,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
-                            <a class="nav-link" href="#">Novedades</a>
-                            <a class="nav-link" href="#">"Upcycling"</a>
-                            <a class="nav-link" href="#">Testimonios</a>
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                            <a class="nav-link" href="./pages/novedades.html">Novedades</a>
+                            <a class="nav-link" href="./pages/upcycling.html">"Upcycling"</a>
+                            <a class="nav-link" href="./pages/testimonios.html">Testimonios</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -42,7 +43,6 @@
             </div>
         </nav>
     </header>
-
     <main>
         <section class="hero"> <!--Banner Novedades-->
             <img src="Img/banner-cartera.jpg" alt="banner-cartera">
@@ -58,22 +58,22 @@
         </section>
 
         <section class="upcycling">
-            <h2>Upcycling</h2> <!--Upcycling-->
-            <video controls>
-                <source src="videos/video-upcycling.mp4" type="video/mp4">
-            </video>
-            <img src="Img/bottiupcycling1.png">
-            <img src="Img/bottiupcycling2.png">
-            <img src="Img/trapeciojean.png">
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, a provident voluptates, modi
-                libero
-                sit
-                incidunt odit quis cumque error labore. Assumenda ad voluptas officia maxime provident molestiae et
-                impedit?
-            </p>
+            <img class="upcycling upcycling-title" src="img/upcycling-title.png" alt="Upcycling">
+            <div class="upcycling-container"> <!--Upcycling-->
+                <div class="upcycling-item"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolor
+                    expedita consequatur ducimus officiis adipisci doloribus voluptates reiciendis totam et fugit
+                    beatae, atque ab iusto asperiores alias illum. Tempora adipisci sed id, corporis ipsum modi illo
+                    tempore sint quasi minima quibusdam cumque repellat, optio amet. Ab eaque animi deserunt
+                    voluptatibus!</p>
+                </div>
+                <div class="upcycling-item"><img src="img/bottiupcycling1.png" alt="Botti Upcycling Bag"></div>
+                <div class="upcycling-item upcycling-item-2row"><img src="img/trapeciojean.png" alt="Botti Upcycling Bag"></div>
+                <div class="upcycling-item"><video autoplay muted loop src="videos/video-upcycling.mp4"></video></div>
+                <div class="upcycling-item"><img src="img/bottiupcycling2.png" alt="Botti Upcicling Bag"></div>
+            </div>
         </section>
     </main>
+
     <footer>
         <a href="https://thegermenshop.mitiendanube.com/" target="_blank"><img src="./Img/carrito.png"
                 alt="comprar"></a>
