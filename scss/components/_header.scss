@@ -1,0 +1,14 @@
+header {
+    height: 8vh;
+    display: grid;
+    padding-left: 30px;
+    padding-right: 20px;
+
+    .navbar-brand img {
+        height: 7vh;
+    }
+
+    .nav-item {
+        padding-right: 50px;
+    }
+}

@@ -1,3 +1,135 @@
+header {
+  height: 8vh;
+  display: grid;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+header .navbar-brand img {
+  height: 7vh;
+}
+header .nav-item {
+  padding-right: 50px;
+}
 
+body header main section .hero img {
+  width: 100%;
+  display: block;
+}
+body header main section .clasicos .galeria-clasicos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 5px;
+}
+body header main section .clasicos .galeria-clasicos .galeria-clasicos-item img {
+  height: 25vw;
+  transition: 1s;
+}
+body header main section .clasicos .galeria-clasicos .galeria-clasicos-item :hover {
+  height: 33vw;
+  transition: 1s;
+}
+body header main section .upcycling {
+  padding: 3%;
+}
+body header main section .upcycling .upcycling-title {
+  width: 40%;
+  transform: rotate(-3deg);
+}
+body header main section .upcycling .upcycling-container {
+  display: grid;
+  grid-template-columns: 4fr 2fr 5fr;
+  grid-template-rows: 35vh 35vh;
+}
+body header main section .upcycling .upcycling-container .upcycling-item {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 5px;
+  margin: 5px;
+}
+body header main section .upcycling .upcycling-container .upcycling-item p {
+  padding: 5%;
+  text-align: center;
+}
+body header main section .upcycling .upcycling-container .upcycling-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+body header main section .upcycling .upcycling-container .upcycling-item-2row {
+  grid-row: span 2;
+}
+body header main section .upcycling .upcycling-container .upcycling-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+body .body-nosotros {
+  background-color: #5ab55a;
+  min-height: 100vh;
+}
+
+body section .body-upcycling {
+  background: linear-gradient(to bottom, #eaeae8, #5ab55a);
+}
+body section .body-upcycling div .upcyclingpage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40vh 40vh;
+  width: 100%;
+  max-width: 100vw;
+  padding: 3%;
+}
+body section .body-upcycling div .upcyclingpage-grid div .upcycling-grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 30px;
+  font-family: "poppins";
+  text-align: justify;
+  font-size: 15px;
+}
+body section .body-upcycling div .upcyclingpage-grid div .upcycling-grid-item h1 {
+  font-family: "poppins";
+  font-weight: 800;
+  font-size: 10vw;
+  color: #0d0d0d;
+  padding-top: 3vh;
+}
+body section .body-upcycling div .upcyclingpage-grid div .upcycling-grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+body section .body-upcycling div .upcyclingpage-grid div .upcycling-grid-item-2column {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+body section .body-upcycling div .upcyclingpage-grid div .upcyclingpage-grid-item-2row {
+  grid-row: span 2;
+  padding: 1vw;
+  display: flexbox;
+  justify-content: center;
+  align-content: center;
+}
+body section .body-upcycling div .upcyclingpage-grid div .upcyclingpage-grid-item-2row video {
+  width: 30vw;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 992px) {
+  header .nav-item {
+    display: flex;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */

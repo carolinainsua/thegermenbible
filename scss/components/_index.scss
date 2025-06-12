@@ -1,0 +1,85 @@
+body {
+    header {
+
+        //*Está separado porque es de Bootstrap, para evitar conflictos con la anidación*//}
+        main {
+            section .hero {
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+
+            section .clasicos {
+                .galeria-clasicos {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    margin-bottom: 5px;
+
+                    .galeria-clasicos-item img {
+                        height: 25vw;
+                        transition: 1s;
+                    }
+
+                    .galeria-clasicos-item :hover {
+                        height: 33vw;
+                        transition: 1s;
+                    }
+                }
+            }
+
+            section .upcycling {
+                padding: 3%;
+
+                .upcycling-title {
+                    width: 40%;
+                    transform: rotate(-3deg);
+                }
+
+                .upcycling-container {
+                    display: grid;
+                    grid-template-columns: 4fr 2fr 5fr;
+                    grid-template-rows: 35vh 35vh;
+
+                    .upcycling-item {
+                        box-sizing: border-box;
+                        display: flex;
+                        align-items: center;
+                        justify-items: center;
+                        padding: 5px;
+                        margin: 5px;
+                    }
+
+                    .upcycling-item p {
+                        padding: 5%;
+                        text-align: center;
+                    }
+
+                    .upcycling-item img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        display: block;
+                    }
+
+                    .upcycling-item-2row {
+                        grid-row: span 2;
+                    }
+
+                    .upcycling-item video {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                    }
+                }
+
+
+
+            }
+        }
+    }
+}
