@@ -9,8 +9,10 @@
 header {
   height: 8vh;
   display: grid;
-  padding-left: 30px;
-  padding-right: 20px;
+}
+
+.bg-body-tertiary {
+  background-color: #eaeae8 !important;
 }
 
 .navbar-brand img {
@@ -52,128 +54,600 @@ header {
 }
 
 .upcycling {
-  padding: 3%;
+  background-color: #5ab53c;
 }
 
-.upcycling-title {
-  width: 40%;
-  transform: rotate(-3deg);
+.upcycling-background {
+  width: 100%;
 }
-
 .upcycling-container {
   display: grid;
-  grid-template-columns: 4fr 2fr 5fr;
-  grid-template-rows: 35vh 35vh;
+  grid-template-columns: 40vw 40vw;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  gap: 5vw;
+  align-items: center;
+  padding: 0 2vw 5vw 2vw;
+  background-color: #5ab53c;
 }
 
-.upcycling-item {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  padding: 5px;
-  margin: 5px;
+.upcycling-item-text {
+  justify-self: end;
+}
+
+.upcycling-item h2 {
+  font-family: sono;
+  font-weight: bolder;
+  font-size: clamp(2rem, 6vw, 7rem);
+  color: #eaeae8;
+  text-align: right;
 }
 
 .upcycling-item p {
-  padding: 5%;
-  text-align: center;
+  font-family: anuphan;
+  font-size: large;
+  color: #eaeae8;
+  text-align: right;
+  padding-left: 5vw;
 }
 
-.upcycling-item img {
+.upcycling-item-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 30vw;
+}
+
+.upcycling-item-carousel img {
+  border-radius: 3cap;
+}
+
+/**----Tablet----**/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hero img {
+    width: 150%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    justify-self: center;
+  }
+
+  .galeria-clasicos-item :hover {
+    height: 50vw;
+    transition: 1s;
+  }
+
+  .upcycling {
+    margin-top: 2vh;
+    width: 100%;
+  }
+  .upcycling-container {
+    padding: 0 0 7vh 0;
+    width: 100vw;
+  }
+
+  .upcycling-item-text {
+    padding: 2vh 0 2vh 2vw;
+  }
+
+  .upcycling-item-carousel {
+    max-width: 60vw;
+  }
+}
+
+/**----Celular----**/
+@media (max-width: 767px) {
+ .hero {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hero img {
+    width: 150%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    justify-self: center;
+  }
+
+  .galeria-clasicos-item :hover {
+    height: 60vw;
+    transition: 1s;
+  }
+
+  .upcycling-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .upcycling-item {
+    margin: 1vh 2vw 1vh 2vw;
+  }
+
+  .upcycling-item-text {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 90%;
+    height: auto;
+  }
+
+  .upcycling-item h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+
+  .upcycling-item p {
+    text-align: center;
+  }
+
+  .upcycling-item-carousel {
+    max-width: 90vw;
+  }
+}
+
+/**------------------------------------------------BODY NOSOTROS------------------------------------------------*/
+.nosotrospage {
+  min-height: 81vh;
+}
+
+.nosotros-grid-container {
+  width: 81vw;
+  max-width: 2500px;
+  height: 77vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.nosotros-grid-item {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nosotros-grid-item-pufferbag {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.nosotros-grid-item-pufferbag img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.upcycling-item-2row {
-  grid-row: span 2;
+.nosotros-grid-item-text {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  text-align: left;
 }
 
-.upcycling-item video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.nosotros-grid-item-text p {
+  font-family: anuphan;
+  text-align: justify;
+  font-size: 100%;
+  max-width: 600px;
+}
+
+.nosotros-grid-item-text p::selection {
+  background-color: #5ab53c;
+  color: #0d0d0d;
+}
+
+.nosotros-grid-item-logo {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  align-items: start;
+}
+
+.nosotros-grid-item-logo img {
+  max-width: 550px;
+  width: 40vw;
+  height: auto;
   display: block;
 }
 
-/**------------------------------------------------BODY NOSOTROS------------------------------------------------*/
-body .body-nosotros {
-  background-color: #5ab55a;
-  min-height: 100vh;
+@media (max-width: 767px) {
+  .nosotros-grid-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: auto;
+    overflow: visible;
+  }
+
+  .nosotros-grid-item {
+    height: auto;
+    overflow: visible;
+  }
+
+  .nosotros-grid-item-logo {
+    display: flex;
+    max-width: 300px;
+    margin-top: 6vh;
+    margin-bottom: 5vh;
+  }
+
+  .nosotros-grid-item-logo img {
+    max-width: 100%;
+  }
+
+  .nosotros-grid-item-text p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nosotros-grid-item-pufferbag img {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/**------------------------------------------------BODY NOVEDADES------------------------------------------------*/
+.novedades {
+  background-color: #0d0d0d;
+  min-height: 81vh;
+}
+
+.novedades-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.novedades-title img {
+  width: 35vw;
+  padding: 1%;
+}
+
+.novedades-container {
+  display: flex;
+  justify-self: center;
+  height: 67vh;
+  max-width: 2300px;
+  gap: 5%;
+  margin-top: 1rem;
+  padding: 0rem 2rem 0rem 2rem;
+}
+
+.novedades-item {
+  height: 70vh;
+  width: 30vw;
+  overflow: hidden;
+}
+
+.novedades-item img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border: #5ab55a 3px solid;
+  border-radius: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.novedades-item p {
+  font-size: medium;
+  color: #5ab53c;
+  padding: 0.5rem;
+  height: 20%;
+  overflow: hidden;
+  text-align: center;
+}
+
+/**----Celular----**/
+@media (max-width: 767px) {
+  .novedades-title img {
+    height: auto;
+    width: 87vw;
+    margin: 2vh 0vh 2vh 0vh;
+  }
+
+  .novedades-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .novedades-item {
+    width: 80vw;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .novedades-item img {
+    height: auto;
+  }
+
+  .novedades-item p {
+    height: auto;
+    font-size: small;
+  }
 }
 
 /**------------------------------------------------BODY UPCYCLING------------------------------------------------*/
-body .body-upcycling {
+.body-upcyclingpage {
   background: linear-gradient(to bottom, #eaeae8, #5ab55a);
+  min-height: 81vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
 .upcyclingpage-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 40vh 40vh;
+  justify-self: center;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 30vh auto;
   width: 100%;
-  max-width: 100vw;
-padding: 3%;
+  max-width: 1500px;
+  padding: 1%;
+  column-gap: 3rem;
 }
 
 .upcyclingpage-grid-item {
   display: flex;
   align-items: center;
   justify-content: center;
- box-sizing: border-box;
- padding: 30px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
 }
-
-.upcycling-grid-item-2column {
-  grid-column: 1 / 3;
-  grid-row: 1/2;
-}
-
-.upcyclingpage-grid-item h1 {
-  font-family: "poppins";
-  font-weight: 800;
-  font-size: 10vw;
-  color: #0d0d0d;
-padding-top: 3vh;
-  }
-
-.upcyclingpage-grid-item {
-    font-family: 'poppins';
-    text-align: justify;
-    font-size: 15px;}
 
 .upcyclingpage-grid-item img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
+  padding-top: 5vh;
 }
 
-.upcyclingpage-grid-item-2row {
-  grid-row: span 2;
-  padding: 1vw;
-  display:flexbox;
-  justify-content: center;
-  align-content: center;
-}
-
-.upcyclingpage-grid-item-2row video {
-  width: 30vw;
-  object-fit: cover;
+.upcyclingpage-grid-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   display: block;
+  align-self: flex-end;
+  max-height: 81vh;
+}
+
+.upcyclingpage-video {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+.upcyclingpage-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.upcyclingpage-text h1 {
+  text-align: left;
+  font-family: sono;
+  font-weight: 800;
+  font-size: larger;
+}
+
+.upcyclingpage-text p {
+  text-align: justify;
+  font-family: anuphan;
+  font-size: medium;
+  padding: 0 10vw 0 10vw;
+}
+
+/**--Tablet--**/
+@media (min-width: 768px) and (max-width: 1400px) {
+  .body-upcyclingpage {
+    height: auto;
+    min-height: 81vh;
+  }
+
+  .upcyclingpage-grid {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-self: right;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+    height: auto;
+    max-width: 90vw;
+  }
+
+  .upcyclingpage-text p {
+    margin-left: 2rem;
+    padding: 0;
+  }
+
+  .upcyclingpage-text h1 {
+    margin-left: 2rem;
+  }
+
+  .upcycling-title {
+    width: 100%;
+    display: flex;
+    justify-self: center;
+  }
+
+  .upcyclingpage-grid-item img {
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    object-fit: contain;
+    display: block;
+    padding-top: 2vh;
+  }
+
+  .upcyclingpage-grid-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .upcyclingpage-grid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .upcyclingpage-text {
+    margin-bottom: 2rem;
+  }
+
+  .upcyclingpage-grid-item video {
+    width: 100vw;
+  }
+}
+
+/**------------------------------------------------BODY TESTIMONIOS------------------------------------------------*/
+.testimonios-page {
+  background-color: #eaeae8;
+  min-height: 81vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonios-input {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.testimonios-item {
+  width: 40vw;
+  box-sizing: border-box;
+  padding: 1%;
+}
+
+.testimonios-title {
+  width: 35vw;
+  padding: 5%;
+}
+
+.testimonios-item img {
+  width: 100%;
+}
+
+.testimonios-item form {
+  padding: 10%;
+  background-color: #5ab53c;
+  border: #0d0d0d 5px solid;
+  border-radius: 1cm;
+}
+
+.testimonios-input label {
+  font-family: sono;
+  font-weight: 400;
+}
+
+.testimonios-item input {
+  background-color: #3e7e29;
+  color: #eaeae8;
+  font-family: sono;
+  font-size: large;
+}
+
+.testimonios-item textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #3e7e29;
+  color: #eaeae8;
+  font-family: sono;
+  font-size: medium;
+  resize: vertical;
+}
+
+.testimonios-input button {
+  padding: 3%;
+  color: #0d0d0d;
+  font-size: 100%;
+  background-color: #6bd647;
+  font-family: sono;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .testimonios-input {
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .testimonios-item {
+    width: 90vw;
+  }
+
+  .testimonios-title {
+    width: 90vw;
+  }
+}
+
+/**------Tablet------**/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .testimonios-input {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+
+  .testimonios-item {
+    gap: 0;
+    width: 47vw;
+    box-sizing: border-box;
+    padding: 0;
+    align-content: center;
+    min-height: 81vh;
+    box-sizing: border-box;
+  }
 }
 
 /*?------------------------------------------------FOOTER------------------------------------------------*/
 footer {
-  background-color: #5ab55a;
-  height: 15vh;
+  background-color: #5ab53c;
+  height: 11vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 footer img {
-  height: 5vh;
+  height: 7vh;
 }
