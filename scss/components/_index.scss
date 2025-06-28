@@ -59,7 +59,7 @@
         }
 
         p {
-            font-family: anuphan;
+            font-family: poppins;
             font-size: large;
             color: #eaeae8;
             text-align: right;
@@ -74,116 +74,6 @@
 
             img {
                 border-radius: 3cap;
-            }
-        }
-    }
-}
-
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .hero {
-        width: 100vw;
-        overflow: hidden;
-        position: relative;
-
-        img {
-            width: 150%;
-            height: auto;
-            display: block;
-            object-fit: contain;
-            justify-self: center;
-        }
-    }
-
-    .galeria-clasicos {
-        &-item {
-            &:hover {
-                img {
-                    height: 50vw;
-                    transition: 1s;
-                }
-            }
-        }
-    }
-
-    .upcycling {
-        margin-top: 2vh;
-        width: 100%;
-
-        &-container {
-            padding: 0 0 7vh 0;
-            width: 100vw;
-        }
-
-        &-item {
-            &-text {
-                padding: 2vh 0 2vh 2vw;
-            }
-
-            &-carousel {
-                max-width: 60vw;
-            }
-        }
-    }
-}
-
-/* Celular */
-@media (max-width: 767px) {
-    .hero {
-        width: 100vw;
-        overflow: hidden;
-        position: relative;
-
-        img {
-            width: 150%;
-            height: auto;
-            display: block;
-            object-fit: contain;
-            justify-self: center;
-        }
-    }
-
-    .galeria-clasicos {
-        &-item {
-            &:hover {
-                img {
-                    height: 60vw;
-                    transition: 1s;
-                }
-            }
-        }
-    }
-
-    .upcycling {
-        &-container {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-
-        &-item {
-            margin: 1vh 2vw 1vh 2vw;
-
-            &-text {
-                display: flex;
-                flex-direction: column;
-                justify-self: center;
-                width: 90%;
-                height: auto;
-            }
-
-            h2 {
-                font-size: 50px;
-                text-align: center;
-                margin-bottom: 3vh;
-            }
-
-            p {
-                text-align: center;
-            }
-
-            &-carousel {
-                max-width: 90vw;
             }
         }
     }

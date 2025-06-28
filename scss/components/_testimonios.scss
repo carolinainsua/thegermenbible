@@ -1,78 +1,65 @@
-body {
-    header {}
+.testimonios-page {
+    background-color: #eaeae8;
+    min-height: 81vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    main .testimonios-page {
-        background-color: #eaeae8;
-        min-height: 81vh;
+    .testimonios-input {
         display: flex;
+        gap: 25px;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        margin: 5vh 0 5vh 0;
 
-        div .testimonios-input {
-            display: flex;
-            gap: 25px;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
+        .testimonios-item {
+            width: 40vw;
             box-sizing: border-box;
-            flex-wrap: wrap;
+            padding: 1%;
 
-            div .testimonios-item {
+            img {
+                width: 100%;
+            }
 
-                width: 40vw;
-                box-sizing: border-box;
-                padding: 1%;
+            form {
+                padding: 10%;
+                background-color: #5ab53c;
+                border: #0d0d0d 5px solid;
+                border-radius: 1cm;
 
-                img {
+                label {
+                    font-family: sono;
+                    font-weight: 400;
+                }
+
+                input {
+                    background-color: #3e7e29;
+                    color: #eaeae8;
+                    font-family: sono;
+                    font-size: large;
+                }
+
+                textarea {
                     width: 100%;
+                    box-sizing: border-box;
+                    background-color: #3e7e29;
+                    color: #eaeae8;
+                    font-family: sono;
+                    font-size: medium;
+                    resize: vertical;
                 }
 
-                div .testimonios-title {
-                    width: 35vw;
-                    padding: 5%;
-                }
-
-                form {
-                    padding: 10%;
-                    background-color: #5ab53c;
-                    border: #0d0d0d 5px solid;
-                    border-radius: 1cm;
-
-                    button {
-                        padding: 3%;
-                        color: #0d0d0d;
-                        font-size: 100%;
-                        background-color: #6bd647;
-                        font-family: sono;
-                        font-weight: 700;
-                    }
-
-                    label {
-                        font-family: sono;
-                        font-weight: 400;
-                    }
-
-                    input {
-                        background-color: #3e7e29;
-                        color: #eaeae8;
-                        font-family: sono;
-                        font-size: large;
-                    }
-
-                    textarea {
-                        width: 100%;
-                        box-sizing: border-box;
-                        background-color: #3e7e29;
-                        color: #eaeae8;
-                        font-family: sono;
-                        font-size: medium;
-                        resize: vertical;
-                    }
+                button {
+                    padding: 3%;
+                    color: #0d0d0d;
+                    font-size: 100%;
+                    background-color: #6bd647;
+                    font-family: sono;
+                    font-weight: 700;
                 }
             }
         }
     }
-}
-
-footer {}
 }

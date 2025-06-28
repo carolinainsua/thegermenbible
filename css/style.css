@@ -242,6 +242,7 @@ header {
   display: block;
 }
 
+/*?--------------------------CELULAR--------------------------*/
 @media (max-width: 767px) {
   .nosotros-grid-container {
     display: flex;

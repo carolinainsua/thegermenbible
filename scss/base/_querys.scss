@@ -1,19 +1,153 @@
-/**------------------------------------------------HEADER------------------------------------------------*/
-header {
-  @media (min-width: 992px) {
-    .nav-item {
+//**--------------------------HEADER--------------------------**//
+@media (min-width: 992px) {
+  .nav-item {
+    display: flex;
+  }
+}
+
+//*!--------------------------TABLET--------------------------*//
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  //**--------------------------INDEX--------------------------**//
+  .galeria-clasicos {
+    &-item {
+      &:hover {
+        img {
+          height: 40vh;
+          transition: 1s;
+        }
+      }
+    }
+  }
+
+  .upcycling {
+    margin-top: 2vh;
+    width: 100%;
+  }
+
+  .upcycling-container {
+    padding: 0 0 7vh 0;
+    width: 100%;
+  }
+
+  .upcycling-item-text {
+    padding: 2vh 0 2vh 2vw;
+  }
+
+  .upcycling-item-carousel {
+    max-width: 60vw;
+  }
+
+  //**--------------------------NOSOTROS--------------------------**//
+  .nosotrospage {
+    width: 100%;
+
+    .nosotros-grid-container {
+      width: 100%;
       display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+      height: auto;
+      overflow: visible;
+
+      .nosotros-grid-item {
+        width: 100%;
+        height: auto;
+        overflow: visible;
+
+        &.nosotros-grid-item-logo {
+          display: flex;
+          max-width: 300px;
+          margin-top: 10vh;
+          margin-bottom: 5vh;
+
+          img {
+            max-width: 100%;
+          }
+        }
+
+        &.nosotros-grid-item-text {
+          p {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+          }
+        }
+
+        &.nosotros-grid-item-pufferbag {
+          img {
+            width: 90%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+  //**--------------------------UPCYCLING--------------------------**//
+  .body-upcyclingpage {
+    .upcyclingpage-grid {
+      display: grid;
+      justify-self: center;
+      grid-template-columns: 2fr 3fr;
+      grid-template-rows: 30vh auto;
+      width: auto;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      column-gap: 0;
+
+      .upcyclingpage-grid-item {
+        img {
+          justify-self: center;
+          width: 70%;
+          height: auto;
+          padding-top: 4vh;
+        }
+
+        video {
+          object-fit: cover;
+          width: fill;
+          object-fit: auto;
+          align-self: flex-start;
+        }
+      }
+
+      .upcyclingpage-text {
+        justify-content: flex-start;
+
+        h1 {
+          text-align: center;
+          font-size: 220%;
+        }
+
+        p {
+          text-align: justify;
+          font-family: poppins;
+          font-size: 80%;
+          padding-left: 5vw;
+          padding-right: 5vw;
+
+        }
+      }
     }
   }
 }
 
-/**------------------------------------------------MAIN INDEX------------------------------------------------*/
-/**----Celular----**/
+//*?--------------------------CELULAR--------------------------*//
 @media (max-width: 767px) {
-  .galeria-clasicos-item {
-    &:hover {
-      height: 60vw;
-      transition: 1s;
+
+  //**--------------------------INDEX--------------------------**//
+  .galeria-clasicos {
+    &-item {
+      &:hover {
+        img {
+          height: 27vh;
+          transition: 1s;
+        }
+      }
     }
   }
 
@@ -21,131 +155,104 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
-    .upcycling-item {
-      margin: 1vh 2vw 1vh 2vw;
-
-      h2 {
-        font-size: 45px;
-        text-align: center;
-        margin-bottom: 3vh;
-      }
-
-      p {
-        font-size: 15px;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-      }
-
-      .upcycling-item-text {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 90%;
-        height: auto;
-
-        .upcycling-item-carousel {
-          max-width: 90vw;
-        }
-      }
-    }
-  }
-}
-
-/**----Tablet----**/
-@media (min-width: 768px) and (max-width: 1024px) {
-  .galeria-clasicos-item {
-    &:hover {
-      height: 50vw;
-      transition: 1s;
-    }
   }
 
-  .upcycling {
-    margin-top: 2vh;
-    width: 100%;
-
-    .upcycling-container {
-      padding: 0 0 7vh 0;
-      width: 100vw;
-
-      .upcycling-item-text {
-        padding: 2vh 0 2vh 2vw;
-      }
-
-      .upcycling-item-carousel {
-        max-width: 60vw;
-      }
-    }
+  .upcycling-item {
+    margin: 1vh 2vw 1vh 2vw;
   }
-}
 
-/**------------------------------------------------BODY NOSOTROS------------------------------------------------**/
-/**----Celular----**/
-@media (max-width: 767px) {
-  .nosotros-grid-container {
+  .upcycling-item-text {
     display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-self: center;
+    width: 90%;
     height: auto;
-    overflow: visible;
+  }
 
-    .nosotros-grid-item {
+  .upcycling-item h2 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+
+  .upcycling-item p {
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .upcycling-item-carousel {
+    max-width: 90vw;
+  }
+
+  //**--------------------------NOSOTROS--------------------------**//
+  .nosotrospage {
+    .nosotros-grid-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
       height: auto;
       overflow: visible;
 
-      .nosotros-grid-item-logo {
-        display: flex;
-        max-width: 300px;
-        margin-top: 6vh;
-        margin-bottom: 5vh;
+      .nosotros-grid-item {
+        height: auto;
+        overflow: visible;
 
-        img {
-          max-width: 100%;
+        &.nosotros-grid-item-logo {
+          display: flex;
+          max-width: 300px;
+          margin-top: 6vh;
+          margin-bottom: 5vh;
+
+          img {
+            max-width: 100%;
+          }
         }
-      }
 
-      .nosotros-grid-item-text p {
-        margin: 0;
-        padding: 0;
-      }
+        &.nosotros-grid-item-text {
+          p {
+            margin: 0;
+            padding: 0;
+          }
+        }
 
-      .nosotros-grid-item-pufferbag {
-        img {
-          width: 100vw;
-          height: auto;
-          margin: 0;
-          padding: 0;
+        &.nosotros-grid-item-pufferbag {
+          img {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+          }
         }
       }
     }
   }
-}
 
-/**------------------------------------------------BODY NOVEDADES------------------------------------------------*/
-/**----Celular----**/
-@media (max-width: 767px) {
-  .novedades-title {
-    img {
-      height: auto;
-      width: 87vw;
-      margin: 2vh 0vh 2vh 0vh;
-    }
-  }
-
-  .novedades-container {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-
-    .novedades-item {
-      width: 80vw;
-      height: auto;
-      margin-bottom: 1rem;
-
+  //**--------------------------NOVEDADES--------------------------**//
+  .novedades {
+    .novedades-title {
       img {
         height: auto;
+        width: 87vw;
+        margin: 2vh 0vh 2vh 0vh;
+      }
+    }
+
+    .novedades-container {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+
+
+      .novedades-item {
+        width: 80vw;
+        height: auto;
+        margin-bottom: 1rem;
+
+        img {
+          height: auto;
+        }
 
         p {
           height: auto;
@@ -154,120 +261,77 @@ header {
       }
     }
   }
-}
 
-/**------------------------------------------------BODY UPCYCLING------------------------------------------------*/
-/**----Celular----**/
-@media (max-width: 767px) {
-  .upcyclingpage-grid {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-
-    .upcyclingpage-grid-item video {
-      width: 100vw;
-    }
-
-    .upcyclingpage-text {
-      margin-bottom: 2rem;
-    }
-  }
-
-  /**--Tablet--**/
-  @media (min-width: 768px) and (max-width: 1400px) {
-    .body-upcyclingpage {
+  //**--------------------------UPCYCLING--------------------------**//
+  .body-upcyclingpage {
+    .upcyclingpage-grid {
+      width: 100vh;
+      display: flex;
+      flex-direction: column;
+      width: auto;
       height: auto;
-      min-height: 81vh;
+      margin: 0;
+      padding: 0;
 
-      .upcyclingpage-grid {
-        margin: 0;
-        padding: 0;
-        display: grid;
-        justify-self: right;
-        align-items: center;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        width: 100%;
-        height: auto;
-        max-width: 90vw;
+      .upcyclingpage-grid-item {
+        img {
+          justify-self: center;
+          width: 100vw;
+          height: auto;
+          padding: 35px 15px 35px 15px;
+        }
 
-        .upcyclingpage-text {
-          p {
-            margin-left: 2rem;
-            padding: 0;
-          }
+        video {
+          margin: 0;
+          padding: 0;
+          width: 100vw;
+          height: auto;
+          max-height: 100vh;
+          object-fit: cover;
+        }
+      }
 
-          h1 {
-            margin-left: 2rem;
-          }
+      .upcyclingpage-text {
 
-          .upcycling-title {
-            width: 100%;
-            display: flex;
-            justify-self: center;
-          }
+        h1 {
+          margin: 35px 5px 35px 5px;
+          text-align: center;
+          font-size: 300%;
+        }
 
-          .upcyclingpage-grid-item {
-            img {
-              width: 100%;
-              height: 100%;
-              justify-content: space-around;
-              object-fit: contain;
-              display: block;
-              padding-top: 2vh;
+        p {
+          font-family: poppins;
+          font-size: 90%;
+          padding: 0 25px 55px 25px;
 
-              video {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                display: block;
-                align-self: flex-start;
-              }
-            }
-          }
         }
       }
     }
   }
 }
 
-/**------------------------------------------------BODY TESTIMONIOS------------------------------------------------*/
-/**----Celular----**/
-@media (max-width: 767px) {
-  .testimonios-input {
-    flex-direction: column-reverse;
-    align-items: center;
-    row-gap: 5vh;
-    margin-bottom: 5vh;
 
-    .testimonios-item {
-      width: 90vw;
-    }
+//*!--------------------------A MEDIDA--------------------------*//
+@media (max-width: 1400px) {
 
-    .testimonios-title {
-      width: 90vw;
-    }
-  }
-}
+  //**--------------------------TESTIMONIOS--------------------------**//
+  .testimonios-page {
+    .testimonios-input {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 5vh;
 
-/**------Tablet------**/
-@media (min-width: 768px) and (max-width: 1024px) {
-  .testimonios-input {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    flex-wrap: wrap;
+      .testimonios-item {
+        gap: 0;
+        width: 95vw;
+        box-sizing: border-box;
+        padding: 0 5vw 3vh 5vw;
+        align-content: center;
+        min-height: auto;
+      }
 
-    .testimonios-item {
-      gap: 0;
-      width: 47vw;
-      box-sizing: border-box;
-      padding: 0;
-      align-content: center;
-      min-height: 81vh;
-      box-sizing: border-box;
     }
   }
 }
