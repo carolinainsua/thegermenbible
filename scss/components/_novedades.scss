@@ -1,0 +1,61 @@
+body {
+    header {}
+
+    main .novedades {
+        background-color: #0d0d0d;
+        min-height: 81vh;
+
+        section .novedades {
+            div .novedades-title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 2rem;
+
+                img {
+                    width: 35vw;
+                    padding: 1%;
+                }
+
+                div .novedades-container {
+                    display: flex;
+                    justify-self: center;
+                    height: 67vh;
+                    max-width: 2300px;
+                    gap: 5%;
+                    margin-top: 1rem;
+                    padding: 0rem 2rem 0rem 2rem;
+
+                    div .novedades-item {
+                        height: 70vh;
+                        width: 30vw;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                            height: 80%;
+                            object-fit: cover;
+                            border-top-left-radius: 50px;
+                            border-top-right-radius: 50px;
+                            border: #5ab55a 3px solid;
+                            border-radius: 50px;
+                            margin: 0;
+                            padding: 0;
+
+                            p {
+                                font-size: medium;
+                                color: #5ab53c;
+                                padding: 0.5rem;
+                                height: 20%;
+                                overflow: hidden;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {}
+}

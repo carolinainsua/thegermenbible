@@ -1,64 +1,78 @@
 body {
-    header {
-        //**Está en la hoja HEADER, por ser Bootstrap//}
-    }
+    header {}
 
-        section .body-upcycling {
+    main {
+        div .body-upcyclingpage {
             background: linear-gradient(to bottom, #eaeae8, #5ab55a);
+            min-height: 81vh;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
 
             div .upcyclingpage-grid {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 40vh 40vh;
+                justify-self: center;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: 30vh auto;
                 width: 100%;
-                max-width: 100vw;
-                padding: 3%;
+                max-width: 1500px;
+                padding: 1%;
+                column-gap: 3rem;
 
-                div .upcycling-grid-item {
+                .upcyclingpage-item {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     box-sizing: border-box;
-                    padding: 30px;
-                    font-family: 'poppins';
-                    text-align: justify;
-                    font-size: 15px;
-
-                    h1 {
-                        font-family: "poppins";
-                        font-weight: 800;
-                        font-size: 10vw;
-                        color: #0d0d0d;
-                        padding-top: 3vh;
-                    }
+                    height: 100%;
+                    width: 100%;
 
                     img {
                         width: 100%;
                         height: 100%;
                         object-fit: contain;
                         display: block;
+                        padding-top: 5vh;
                     }
-                }
-
-                div .upcycling-grid-item-2column {
-                    grid-column: 1 / 3;
-                    grid-row: 1/2;
-                }
-
-                div .upcyclingpage-grid-item-2row {
-                    grid-row: span 2;
-                    padding: 1vw;
-                    display: flexbox;
-                    justify-content: center;
-                    align-content: center;
 
                     video {
-                        width: 30vw;
-                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
                         display: block;
+                        align-self: flex-end;
+                        max-height: 81vh;
+                    }
+
+                    .upcyclingpage-title {}
+
+                    .upcyclingpage-video {
+                        grid-column: 2/3;
+                        grid-row: 1/3;
+                    }
+
+                    .upcyclingpage-text {
+                        display: flex;
+                        flex-direction: column;
+
+                        h1 {
+                            text-align: left;
+                            font-family: sono;
+                            font-weight: 800;
+                            font-size: larger;
+                        }
+
+                        p {
+                            text-align: justify;
+                            font-family: anuphan;
+                            font-size: medium;
+                            padding: 0 10vw 0 10vw;
+                        }
                     }
                 }
             }
-
         }
     }
+
+    footer {}
+}

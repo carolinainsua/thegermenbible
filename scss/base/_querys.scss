@@ -1,7 +1,273 @@
+/**------------------------------------------------HEADER------------------------------------------------*/
 header {
   @media (min-width: 992px) {
     .nav-item {
       display: flex;
+    }
+  }
+}
+
+/**------------------------------------------------MAIN INDEX------------------------------------------------*/
+/**----Celular----**/
+@media (max-width: 767px) {
+  .galeria-clasicos-item {
+    &:hover {
+      height: 60vw;
+      transition: 1s;
+    }
+  }
+
+  .upcycling-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .upcycling-item {
+      margin: 1vh 2vw 1vh 2vw;
+
+      h2 {
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 3vh;
+      }
+
+      p {
+        font-size: 15px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .upcycling-item-text {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        width: 90%;
+        height: auto;
+
+        .upcycling-item-carousel {
+          max-width: 90vw;
+        }
+      }
+    }
+  }
+}
+
+/**----Tablet----**/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .galeria-clasicos-item {
+    &:hover {
+      height: 50vw;
+      transition: 1s;
+    }
+  }
+
+  .upcycling {
+    margin-top: 2vh;
+    width: 100%;
+
+    .upcycling-container {
+      padding: 0 0 7vh 0;
+      width: 100vw;
+
+      .upcycling-item-text {
+        padding: 2vh 0 2vh 2vw;
+      }
+
+      .upcycling-item-carousel {
+        max-width: 60vw;
+      }
+    }
+  }
+}
+
+/**------------------------------------------------BODY NOSOTROS------------------------------------------------**/
+/**----Celular----**/
+@media (max-width: 767px) {
+  .nosotros-grid-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: auto;
+    overflow: visible;
+
+    .nosotros-grid-item {
+      height: auto;
+      overflow: visible;
+
+      .nosotros-grid-item-logo {
+        display: flex;
+        max-width: 300px;
+        margin-top: 6vh;
+        margin-bottom: 5vh;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .nosotros-grid-item-text p {
+        margin: 0;
+        padding: 0;
+      }
+
+      .nosotros-grid-item-pufferbag {
+        img {
+          width: 100vw;
+          height: auto;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+/**------------------------------------------------BODY NOVEDADES------------------------------------------------*/
+/**----Celular----**/
+@media (max-width: 767px) {
+  .novedades-title {
+    img {
+      height: auto;
+      width: 87vw;
+      margin: 2vh 0vh 2vh 0vh;
+    }
+  }
+
+  .novedades-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+
+    .novedades-item {
+      width: 80vw;
+      height: auto;
+      margin-bottom: 1rem;
+
+      img {
+        height: auto;
+
+        p {
+          height: auto;
+          font-size: small;
+        }
+      }
+    }
+  }
+}
+
+/**------------------------------------------------BODY UPCYCLING------------------------------------------------*/
+/**----Celular----**/
+@media (max-width: 767px) {
+  .upcyclingpage-grid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    .upcyclingpage-grid-item video {
+      width: 100vw;
+    }
+
+    .upcyclingpage-text {
+      margin-bottom: 2rem;
+    }
+  }
+
+  /**--Tablet--**/
+  @media (min-width: 768px) and (max-width: 1400px) {
+    .body-upcyclingpage {
+      height: auto;
+      min-height: 81vh;
+
+      .upcyclingpage-grid {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        justify-self: right;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        width: 100%;
+        height: auto;
+        max-width: 90vw;
+
+        .upcyclingpage-text {
+          p {
+            margin-left: 2rem;
+            padding: 0;
+          }
+
+          h1 {
+            margin-left: 2rem;
+          }
+
+          .upcycling-title {
+            width: 100%;
+            display: flex;
+            justify-self: center;
+          }
+
+          .upcyclingpage-grid-item {
+            img {
+              width: 100%;
+              height: 100%;
+              justify-content: space-around;
+              object-fit: contain;
+              display: block;
+              padding-top: 2vh;
+
+              video {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: block;
+                align-self: flex-start;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**------------------------------------------------BODY TESTIMONIOS------------------------------------------------*/
+/**----Celular----**/
+@media (max-width: 767px) {
+  .testimonios-input {
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 5vh;
+    margin-bottom: 5vh;
+
+    .testimonios-item {
+      width: 90vw;
+    }
+
+    .testimonios-title {
+      width: 90vw;
+    }
+  }
+}
+
+/**------Tablet------**/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .testimonios-input {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+    .testimonios-item {
+      gap: 0;
+      width: 47vw;
+      box-sizing: border-box;
+      padding: 0;
+      align-content: center;
+      min-height: 81vh;
+      box-sizing: border-box;
     }
   }
 }

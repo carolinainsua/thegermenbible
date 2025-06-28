@@ -1,84 +1,189 @@
-body {
-    header {
+.hero {
+    img {
+        width: 100%;
+        display: block;
+    }
+}
 
-        //*Está separado porque es de Bootstrap, para evitar conflictos con la anidación*//}
-        main {
-            section .hero {
+.galeria-clasicos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 5px;
+
+    &-item {
+        img {
+            height: 25vw;
+            transition: 1s;
+        }
+
+        &:hover {
+            img {
+                height: 33vw;
+                transition: 1s;
+            }
+        }
+    }
+}
+
+.upcycling {
+    background-color: #5ab53c;
+
+    &-background {
+        width: 100%;
+    }
+
+    &-container {
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        gap: 5vw;
+        align-items: center;
+        padding: 0 2vw 5vw 2vw;
+        background-color: #5ab53c;
+    }
+
+    &-item {
+        &-text {
+            justify-self: end;
+        }
+
+        h2 {
+            font-family: sono;
+            font-weight: bolder;
+            font-size: clamp(2rem, 6vw, 7rem);
+            color: #eaeae8;
+            text-align: right;
+        }
+
+        p {
+            font-family: anuphan;
+            font-size: large;
+            color: #eaeae8;
+            text-align: right;
+            padding-left: 5vw;
+        }
+
+        &-carousel {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 30vw;
+
+            img {
+                border-radius: 3cap;
+            }
+        }
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero {
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            width: 150%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            justify-self: center;
+        }
+    }
+
+    .galeria-clasicos {
+        &-item {
+            &:hover {
                 img {
-                    width: 100%;
-                    display: block;
+                    height: 50vw;
+                    transition: 1s;
                 }
             }
+        }
+    }
 
+    .upcycling {
+        margin-top: 2vh;
+        width: 100%;
 
-            section .clasicos {
-                .galeria-clasicos {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-evenly;
-                    grid-template-columns: 1fr 1fr 1fr 1fr;
-                    margin-bottom: 5px;
+        &-container {
+            padding: 0 0 7vh 0;
+            width: 100vw;
+        }
 
-                    .galeria-clasicos-item img {
-                        height: 25vw;
-                        transition: 1s;
-                    }
-
-                    .galeria-clasicos-item :hover {
-                        height: 33vw;
-                        transition: 1s;
-                    }
-                }
+        &-item {
+            &-text {
+                padding: 2vh 0 2vh 2vw;
             }
 
-            section .upcycling {
-                padding: 3%;
+            &-carousel {
+                max-width: 60vw;
+            }
+        }
+    }
+}
 
-                .upcycling-title {
-                    width: 40%;
-                    transform: rotate(-3deg);
+/* Celular */
+@media (max-width: 767px) {
+    .hero {
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            width: 150%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            justify-self: center;
+        }
+    }
+
+    .galeria-clasicos {
+        &-item {
+            &:hover {
+                img {
+                    height: 60vw;
+                    transition: 1s;
                 }
+            }
+        }
+    }
 
-                .upcycling-container {
-                    display: grid;
-                    grid-template-columns: 4fr 2fr 5fr;
-                    grid-template-rows: 35vh 35vh;
+    .upcycling {
+        &-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
 
-                    .upcycling-item {
-                        box-sizing: border-box;
-                        display: flex;
-                        align-items: center;
-                        justify-items: center;
-                        padding: 5px;
-                        margin: 5px;
-                    }
+        &-item {
+            margin: 1vh 2vw 1vh 2vw;
 
-                    .upcycling-item p {
-                        padding: 5%;
-                        text-align: center;
-                    }
+            &-text {
+                display: flex;
+                flex-direction: column;
+                justify-self: center;
+                width: 90%;
+                height: auto;
+            }
 
-                    .upcycling-item img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: contain;
-                        display: block;
-                    }
+            h2 {
+                font-size: 50px;
+                text-align: center;
+                margin-bottom: 3vh;
+            }
 
-                    .upcycling-item-2row {
-                        grid-row: span 2;
-                    }
+            p {
+                text-align: center;
+            }
 
-                    .upcycling-item video {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        display: block;
-                    }
-                }
-
-
-
+            &-carousel {
+                max-width: 90vw;
             }
         }
     }

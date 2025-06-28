@@ -1,14 +1,16 @@
 header {
-    height: 8vh;
-    display: grid;
-    padding-left: 30px;
-    padding-right: 20px;
+  height: 8vh;
+  display: grid;
 
-    .navbar-brand img {
-        height: 7vh;
-    }
+  .bg-body-tertiary {
+    background-color: #eaeae8 !important;
+  }
 
-    .nav-item {
-        padding-right: 50px;
-    }
+  .navbar-brand img {
+    height: 7vh;
+  }
+
+  .nav-item {
+    padding-right: 50px;
+  }
 }

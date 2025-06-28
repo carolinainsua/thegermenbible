@@ -23,6 +23,7 @@ header {
   padding-right: 50px;
 }
 
+
 @media (min-width: 992px) {
   .nav-item {
     display: flex;
@@ -104,21 +105,7 @@ header {
 
 /**----Tablet----**/
 @media (min-width: 768px) and (max-width: 1024px) {
-  .hero {
-    width: 100vw;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .hero img {
-    width: 150%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    justify-self: center;
-  }
-
-  .galeria-clasicos-item :hover {
+.galeria-clasicos-item :hover {
     height: 50vw;
     transition: 1s;
   }
@@ -129,7 +116,7 @@ header {
   }
   .upcycling-container {
     padding: 0 0 7vh 0;
-    width: 100vw;
+    width: 100%;
   }
 
   .upcycling-item-text {
@@ -143,21 +130,7 @@ header {
 
 /**----Celular----**/
 @media (max-width: 767px) {
- .hero {
-    width: 100vw;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .hero img {
-    width: 150%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    justify-self: center;
-  }
-
-  .galeria-clasicos-item :hover {
+.galeria-clasicos-item :hover {
     height: 60vw;
     transition: 1s;
   }
@@ -181,13 +154,16 @@ header {
   }
 
   .upcycling-item h2 {
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
     margin-bottom: 3vh;
   }
 
   .upcycling-item p {
+    font-size: 15px;
     text-align: center;
+    margin: 0;
+    padding: 0;
   }
 
   .upcycling-item-carousel {
@@ -195,7 +171,7 @@ header {
   }
 }
 
-/**------------------------------------------------BODY NOSOTROS------------------------------------------------*/
+/**------------------------------------------------BODY NOSOTROS------------------------------------------------**/
 .nosotrospage {
   min-height: 81vh;
 }
@@ -297,7 +273,7 @@ header {
   }
 
   .nosotros-grid-item-pufferbag img {
-    width: 100vw;
+    width: 100%;
     height: auto;
     margin: 0;
     padding: 0;

@@ -1,3 +1,11 @@
-footer{
-    
+footer {
+    background-color: #5ab53c;
+    height: 11vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+        height: 7vh;
+    }
 }

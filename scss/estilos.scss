@@ -1,3 +1,5 @@
+@import "./base/generales";
+@import "./base/funcionalidades";
 @import "./components/header";
 @import "./components/footer";
 @import "./components/index";
@@ -5,6 +7,4 @@
 @import "./components/novedades";
 @import "./components/upcycling";
 @import "./components/testimonios";
-@import "./base/funcionalidades";
-@import "./base/generales";
 @import "./base/querys";
