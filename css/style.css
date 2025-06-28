@@ -85,7 +85,7 @@ header {
 }
 
 .upcycling-item p {
-  font-family: anuphan;
+  font-family: poppins;
   font-size: large;
   color: #eaeae8;
   text-align: right;
@@ -218,7 +218,7 @@ header {
 }
 
 .nosotros-grid-item-text p {
-  font-family: anuphan;
+  font-family: poppins;
   text-align: justify;
   font-size: 100%;
   max-width: 600px;
@@ -327,6 +327,7 @@ header {
 }
 
 .novedades-item p {
+  font-family: poppins;
   font-size: medium;
   color: #5ab53c;
   padding: 0.5rem;
@@ -425,12 +426,12 @@ header {
   text-align: left;
   font-family: sono;
   font-weight: 800;
-  font-size: larger;
+  font-size: 25px;
 }
 
 .upcyclingpage-text p {
   text-align: justify;
-  font-family: anuphan;
+  font-family: poppins;
   font-size: medium;
   padding: 0 10vw 0 10vw;
 }
