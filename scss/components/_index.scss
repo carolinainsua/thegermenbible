@@ -1,80 +1,87 @@
 .hero {
-    img {
-        width: 100%;
-        display: block;
-    }
+  img {
+    width: 100%;
+    display: block;
+  }
 }
 
-.galeria-clasicos {
+.clasicos {
+  h1 {
+    @extend %h1;
+    margin-top: 5vh;
+    margin-left: 5vw;
+
+    &::selection{
+        background-color: $verde;
+            }
+}
+
+  .galeria-clasicos {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 5px;
 
     &-item {
+      img {
+        height: 25vw;
+        transition: 1s;
+      }
+
+      &:hover {
         img {
-            height: 25vw;
-            transition: 1s;
+          height: 33vw;
+          transition: 1s;
         }
-
-        &:hover {
-            img {
-                height: 33vw;
-                transition: 1s;
-            }
-        }
+      }
     }
+  }
 }
-
 .upcycling {
-    background-color: #5ab53c;
+  background-color: $verde;
 
-    &-background {
-        width: 100%;
+  &-background {
+    width: 100%;
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    gap: 5vw;
+    align-items: center;
+    padding: 0 2vw 5vw 2vw;
+    background-color: $verde;
+  }
+
+  &-item {
+    &-text {
+      justify-self: end;
     }
 
-    &-container {
-        display: grid;
-        grid-template-columns: 40vw 40vw;
-        grid-template-rows: 1fr;
-        justify-content: center;
-        gap: 5vw;
-        align-items: center;
-        padding: 0 2vw 5vw 2vw;
-        background-color: #5ab53c;
+    h2 {
+      font-family: sono;
+      font-weight: bolder;
+      font-size: clamp(2rem, 6vw, 7rem);
+      color: $blanco;
+      text-align: right;
     }
 
-    &-item {
-        &-text {
-            justify-self: end;
-        }
-
-        h2 {
-            font-family: sono;
-            font-weight: bolder;
-            font-size: clamp(2rem, 6vw, 7rem);
-            color: #eaeae8;
-            text-align: right;
-        }
-
-        p {
-            font-family: poppins;
-            font-size: large;
-            color: #eaeae8;
-            text-align: right;
-            padding-left: 5vw;
-        }
-
-        &-carousel {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            max-width: 30vw;
-
-            img {
-                border-radius: 3cap;
-            }
-        }
+    p {
+      @extend %parrafo;
     }
+
+    &-carousel {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 30vw;
+
+      img {
+        border-radius: 3cap;
+      }
+    }
+  }
 }

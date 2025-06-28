@@ -1,5 +1,5 @@
 .novedades {
-    background-color: #0d0d0d;
+    background-color: $negro;
     min-height: 81vh;
 
     .novedades-title {
@@ -11,6 +11,11 @@
         img {
             width: 35vw;
             padding: 1%;
+        }
+
+        h1{
+            @extend %h1;
+            color: $verde;
         }
     }
 
@@ -34,7 +39,7 @@
                 object-fit: cover;
                 border-top-left-radius: 50px;
                 border-top-right-radius: 50px;
-                border: #5ab55a 3px solid;
+                border:$verde 3px solid;
                 border-radius: 50px;
                 margin: 0;
                 padding: 0;
@@ -43,7 +48,7 @@
             p {
                 font-family: poppins;
                 font-size: medium;
-                color: #5ab53c;
+                color: $verde;
                 padding: 0.5rem;
                 height: 20%;
                 overflow: hidden;

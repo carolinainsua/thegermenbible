@@ -1,5 +1,5 @@
 .testimonios-page {
-    background-color: #eaeae8;
+    background-color: $blanco;
     min-height: 81vh;
     display: flex;
     justify-content: center;
@@ -19,14 +19,21 @@
             box-sizing: border-box;
             padding: 1%;
 
+            .testimonios-title{
+                h1{
+                    @extend %h1;
+                margin-left: 25px;
+                }
+            }
+
             img {
                 width: 100%;
             }
 
             form {
                 padding: 10%;
-                background-color: #5ab53c;
-                border: #0d0d0d 5px solid;
+                background-color: $verde;
+                border: $negro 5px solid;
                 border-radius: 1cm;
 
                 label {
@@ -36,7 +43,7 @@
 
                 input {
                     background-color: #3e7e29;
-                    color: #eaeae8;
+                    color: $verde;
                     font-family: sono;
                     font-size: large;
                 }
@@ -45,7 +52,7 @@
                     width: 100%;
                     box-sizing: border-box;
                     background-color: #3e7e29;
-                    color: #eaeae8;
+                    color: $blanco;
                     font-family: sono;
                     font-size: medium;
                     resize: vertical;
@@ -53,7 +60,7 @@
 
                 button {
                     padding: 3%;
-                    color: #0d0d0d;
+                    color: $negro;
                     font-size: 100%;
                     background-color: #6bd647;
                     font-family: sono;

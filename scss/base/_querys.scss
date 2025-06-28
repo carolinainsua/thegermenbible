@@ -7,14 +7,15 @@
 
 //*!--------------------------TABLET--------------------------*//
 @media (min-width: 768px) and (max-width: 1024px) {
-
   //**--------------------------INDEX--------------------------**//
-  .galeria-clasicos {
-    &-item {
-      &:hover {
-        img {
-          height: 40vh;
-          transition: 1s;
+  .clasicos {
+    .galeria-clasicos {
+      &-item {
+        &:hover {
+          img {
+            height: 40vh;
+            transition: 1s;
+          }
         }
       }
     }
@@ -129,7 +130,6 @@
           font-size: 80%;
           padding-left: 5vw;
           padding-right: 5vw;
-
         }
       }
     }
@@ -138,14 +138,15 @@
 
 //*?--------------------------CELULAR--------------------------*//
 @media (max-width: 767px) {
-
   //**--------------------------INDEX--------------------------**//
-  .galeria-clasicos {
-    &-item {
-      &:hover {
-        img {
-          height: 27vh;
-          transition: 1s;
+  .clasicos {
+    .galeria-clasicos {
+      &-item {
+        &:hover {
+          img {
+            height: 27vh;
+            transition: 1s;
+          }
         }
       }
     }
@@ -244,7 +245,6 @@
       align-items: center;
       height: auto;
 
-
       .novedades-item {
         width: 80vw;
         height: auto;
@@ -292,7 +292,6 @@
       }
 
       .upcyclingpage-text {
-
         h1 {
           margin: 35px 5px 35px 5px;
           text-align: center;
@@ -303,17 +302,14 @@
           font-family: poppins;
           font-size: 90%;
           padding: 0 25px 55px 25px;
-
         }
       }
     }
   }
 }
 
-
 //*!--------------------------A MEDIDA--------------------------*//
 @media (max-width: 1400px) {
-
   //**--------------------------TESTIMONIOS--------------------------**//
   .testimonios-page {
     .testimonios-input {
@@ -331,7 +327,6 @@
         align-content: center;
         min-height: auto;
       }
-
     }
   }
 }

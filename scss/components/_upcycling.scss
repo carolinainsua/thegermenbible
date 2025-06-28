@@ -1,5 +1,5 @@
 .body-upcyclingpage {
-  background: linear-gradient(to bottom, #eaeae8, #5ab55a);
+  background: linear-gradient(to bottom, $blanco, $verde);
   min-height: 81vh;
   display: flex;
   justify-content: center;
@@ -51,6 +51,7 @@
       flex-direction: column;
 
       h1 {
+        @extend %h1;
         text-align: left;
         font-family: sono;
         font-weight: 800;

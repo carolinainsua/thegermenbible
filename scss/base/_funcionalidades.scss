@@ -1,7 +1,40 @@
-//* VARIABLES *//
+//*---VARIABLES---*//
 
-//?Paleta de Color Principal//
+//**?---Paleta de Color Principal "The Germen"---**//
+$verde: #5ab53c;
+$blanco: #eaeae8;
+$negro: #0d0d0d;
 
-$verde: #5ab53c; 
-$blanco: #eaeae8; 
-$negro:  #0d0d0d;
+//*---LISTAS---*//
+
+$font-size:
+    16px,
+    20px,
+    80px;
+
+//*---EXTENDS---*//
+
+%parrafo{
+    font-family: poppins;
+    font-size: large;
+    color: $blanco;
+    text-align: right;
+    padding-left: 5vw;
+}
+
+%h1{
+    font-family: sono;
+    font-size: large;
+ 
+    &::selection{
+        background-color: $verde;
+        color:$negro;
+           }
+}
+
+//*---MIXIN---*//
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
